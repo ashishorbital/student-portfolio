@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashish PS — AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" role="banner">
+    <div class="container">
+      <div class="navbar__inner">
+        <!-- Logo -->
+        <a href="#" class="navbar__logo" aria-label="Personal — Home">
+          <svg class="navbar__logo-icon" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="14" cy="10" r="6" stroke="#111" stroke-width="2"/>
+            <path d="M4 26c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Personal
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="navbar__nav" role="navigation" aria-label="Primary navigation">
+          <a href="#about" class="navbar__nav-link">About Me</a>
+          <a href="#skills" class="navbar__nav-link">Skills</a>
+          <a href="#projects" class="navbar__nav-link">Project</a>
+          <a href="#contact" class="navbar__nav-link">Contact Me</a>
+        </nav>
+
+        <!-- Resume button (desktop) -->
+        <a href="#" class="navbar__resume-btn" download aria-label="Download Resume">
+          Resume
+          <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M7 1v9M3 7l4 4 4-4M2 13h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <!-- Hamburger (mobile/tablet) -->
+        <button
+          class="navbar__hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav class="navbar__mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#about" class="navbar__nav-link">About Me</a>
+      <a href="#skills" class="navbar__nav-link">Skills</a>
+      <a href="#projects" class="navbar__nav-link">Project</a>
+      <a href="#contact" class="navbar__nav-link">Contact Me</a>
+      <a href="#" class="navbar__resume-btn" download aria-label="Download Resume">
+        Resume
+        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:14px;height:14px">
+          <path d="M7 1v9M3 7l4 4 4-4M2 13h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="about" aria-label="Hero — About Me">
+      <div class="container">
+        <div class="hero__inner">
+
+          <!-- Text content -->
+          <div class="hero__content">
+            <h1 class="hero__heading">
+              Hello I'm <strong>Ashish.</strong><br>
+              <strong>AI/ML <span class="underline-text">Engineer</span></strong><br>
+              Based In <strong>India.</strong>
+            </h1>
+            <p class="hero__description">
+              I’m Ashish, a passionate AIML engineer focused on Artificial Intelligence, Machine Learning, and intelligent software
+              development. With a strong interest in emerging AI trends, I continuously explore new ideas, develop real-world projects,
+              and enhance my skills in modern technology and problem-solving.
+
+            </p>
+
+            <div class="hero__divider" aria-hidden="true"></div>
+
+            <!-- Social icons -->
+          <div class="hero__socials" aria-label="Social media links">
+          
+            <!-- LinkedIn -->
+            <a href="#" class="hero__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="1.5" y="1.5" width="15" height="15" rx="2.5" stroke="currentColor" stroke-width="1.5" />
+                <path d="M5.5 8v5.5M5.5 5.5v.5M9 13.5V10a2 2 0 014 0v3.5M9 8v5.5" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" />
+              </svg>
+            </a>
+          
+            <!-- Instagram -->
+            <a href="#" class="hero__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+              </svg>
+            </a>
+          
+            <!-- Twitter / X -->
+            <a href="#" class="hero__social-link" aria-label="Twitter / X">
+              <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M17 1.5L10.5 8.5M1 1.5l6.5 7L1 16.5h3.5L9.5 11l2.5 2.5 2-1.5L10.5 8.5 17 1.5h-3.5l-5.5 6"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          
+          </div>
+          </div>
+
+          <!-- Illustration -->
+          <div class="hero__image-wrap">
+            <img
+              class="hero__illustration"
+              src="images/hero-illustration.png"
+              alt="Illustration of a developer sitting with a laptop"
+              onerror="this.style.display='none'"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="skills" id="skills" aria-label="My Skills">
+      <div class="container">
+        <h2 class="section-heading">My <strong>Skills</strong></h2>
+
+        <div class="skills__grid">
+        
+          <!-- Row 1 -->
+          <div class="skill-card" role="listitem">
+            <img class="skill-card__icon" src="https://cdn.simpleicons.org/python/111111" alt="Python icon" />
+            <span class="skill-card__label">Python</span>
+          </div>
+        
+          <div class="skill-card" role="listitem">
+            <img class="skill-card__icon" src="https://cdn.simpleicons.org/scikitlearn/111111" alt="Machine Learning icon" />
+            <span class="skill-card__label">Machine Learning</span>
+          </div>
+        
+          <div class="skill-card" role="listitem">
+            <img class="skill-card__icon" src="https://cdn.simpleicons.org/pytorch/111111" alt="Deep Learning icon" />
+            <span class="skill-card__label">Deep Learning</span>
+          </div>
+        
+          <div class="skill-card" role="listitem">
+            <img class="skill-card__icon" src="https://cdn.simpleicons.org/codeforces/111111" alt="DSA icon" />
+            <span class="skill-card__label">DSA</span>
+          </div>
+        
+          <!-- Row 2 -->
+          <div class="skill-card" role="listitem">
+            <img class="skill-card__icon" src="https://cdn.simpleicons.org/mysql/111111" alt="SQL icon" />
+            <span class="skill-card__label">SQL</span>
+          </div>
+        
+          <div class="skill-card" role="listitem">
+            <img class="skill-card__icon" src="https://cdn.simpleicons.org/tensorflow/111111" alt="TensorFlow icon" />
+            <span class="skill-card__label">TensorFlow / PyTorch</span>
+          </div>
+        
+          <div class="skill-card" role="listitem">
+            <img class="skill-card__icon" src="https://cdn.simpleicons.org/pandas/111111" alt="Data Analysis icon" />
+            <span class="skill-card__label">Data Analysis</span>
+          </div>
+        
+          <div class="skill-card" role="listitem">
+            <img class="skill-card__icon" src="https://cdn.simpleicons.org/huggingface/111111" alt="Generative AI icon" />
+            <span class="skill-card__label">Generative AI / LLMs</span>
+          </div>
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+  <section class="experience" id="experience" aria-label="My Experience">
+    <div class="container">
+      <h2 class="section-heading">My <strong>Experience</strong></h2>
+  
+      <div class="experience__list">
+  
+        <!-- ELEVATE LABS -->
+        <article class="exp-card">
+          <div class="exp-card__header">
+            <div class="exp-card__title-wrap">
+  
+              <div class="exp-card__company-icon">
+                <img src="./images/elevatelabs_logo.jpg" alt="ELEVATE LABS logo" />
+              </div>
+  
+              <h3 class="exp-card__role">
+                Data Analyst & Machine Learning Intern at ELEVATE LABS
+              </h3>
+  
+            </div>
+  
+            <span class="exp-card__period">
+              Apr 2025 – Jun 2025
+            </span>
+          </div>
+  
+          <p class="exp-card__desc">
+            Worked on data cleaning, visualization, analysis, and machine learning model experimentation for real-world
+            datasets.
+          </p>
+        </article>
+  
+        <!-- EDUNET FOUNDATION -->
+        <article class="exp-card">
+          <div class="exp-card__header">
+            <div class="exp-card__title-wrap">
+  
+              <div class="exp-card__company-icon">
+                <img src="./images/edunetfoundation_logo.jpg" alt="Edunet Foundation logo" />
+              </div>
+  
+              <h3 class="exp-card__role">
+                AI Azure Intern at Edunet Foundation
+              </h3>
+  
+            </div>
+  
+            <span class="exp-card__period">
+              May 2025 – Jun 2025
+            </span>
+          </div>
+  
+          <p class="exp-card__desc">
+            Explored Azure AI services, cloud deployment concepts, and AI workflow implementation using Microsoft Azure
+            tools.
+          </p>
+        </article>
+  
+      </div>
+    </div>
+  </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section class="projects" id="projects" aria-label="My Projects">
+      <div class="container">
+        <h2 class="section-heading">My <strong>Projects</strong></h2>
+    
+        <div class="projects__grid">
+    
+          <!-- Portfolio Website -->
+          <article class="project-card">
+            <div class="project-card__img-wrap">
+              <img class="project-card__img"  src="./images/project-1.png"
+                alt="Portfolio Website project preview" />
+            </div>
+    
+            <div class="project-card__body">
+    
+              <div class="project-card__tags">
+                <span class="project-card__tag">HTML</span>
+                <span class="project-card__tag">CSS</span>
+                <span class="project-card__tag">JavaScript</span>
+              </div>
+    
+              <h3 class="project-card__title">Portfolio Website</h3>
+    
+              <p class="project-card__desc">
+                A responsive personal portfolio website with smooth animations and optimized performance for showcasing
+                projects, skills, and experience.
+              </p>
+    
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" aria-label="View live demo">
+                  Live Demo
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                    <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+    
+            </div>
+          </article>
+    
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact" id="contact" aria-label="Contact Me">
+      <div class="container">
+        <h2 class="section-heading">Contact <strong>Me</strong></h2>
+
+        <div class="contact__inner">
+          <!-- Contact info -->
+          <div class="contact__info">
+            <div class="contact__info-item">
+              <p class="contact__info-label">Email</p>
+              <p class="contact__info-value">ashishpsadan@gmail.com</p>
+            </div>
+            <div class="contact__info-item">
+              <p class="contact__info-label">Phone</p>
+              <p class="contact__info-value">+91 6282 761 232</p>
+            </div>
+            <div class="contact__info-item">
+              <p class="contact__info-label">Location</p>
+              <p class="contact__info-value">Kochi, India</p>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <form class="contact__form" action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
+            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+            <input type="hidden" name="subject" value="New message from portfolio site" />
+            <input type="hidden" name="from_name" value="Portfolio Contact Form" />
+            <!-- optional: redirect after submit -->
+            <!-- <input type="hidden" name="redirect" value="https://YOUR_USERNAME.github.io/YOUR_REPO/thanks.html" /> -->
+          
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required />
+            </div>
+          
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required />
+            </div>
+          
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write your message here…" required></textarea>
+            </div>
+          
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <!-- Logo -->
+        <div class="footer__logo">
+          <svg width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="14" cy="10" r="6" stroke="#111" stroke-width="2"/>
+            <path d="M4 26c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#111" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Personal
+        </div>
+
+        <p class="footer__copyright">© 2026 Ashish PS. All rights reserved.</p>
+
+        <!-- Socials -->
+        <div class="hero__socials" aria-label="Social media links">
+        
+          <!-- LinkedIn -->
+          <a href="#" class="hero__social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="1.5" y="1.5" width="15" height="15" rx="2.5" stroke="currentColor" stroke-width="1.5" />
+              <path d="M5.5 8v5.5M5.5 5.5v.5M9 13.5V10a2 2 0 014 0v3.5M9 8v5.5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" />
+            </svg>
+          </a>
+        
+          <!-- Instagram -->
+          <a href="#" class="hero__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+            </svg>
+          </a>
+        
+          <!-- Twitter / X -->
+          <a href="#" class="hero__social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M17 1.5L10.5 8.5M1 1.5l6.5 7L1 16.5h3.5L9.5 11l2.5 2.5 2-1.5L10.5 8.5 17 1.5h-3.5l-5.5 6"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
