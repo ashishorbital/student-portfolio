@@ -219,6 +219,91 @@ ul { list-style: none; }
   width: fit-content;
 }
 
+/* Hide entire navbar on small screens */
+@media (max-width: 900px) {
+  .navbar {
+    display: none;
+  }
+}
+
+/* Minimal fix: prevent sticky header from covering content on mobile */
+@media (max-width: 900px) {
+  #main-content {
+    padding-top: 70px;
+  }
+
+  /* adjust to your navbar height */
+}
+
+/* Minimal + force override on mobile */
+@media (max-width: 900px) {
+  header.navbar .container { padding: 0 !important; }
+
+  header.navbar .navbar__inner {
+    min-height: 44px !important;
+    padding: 6px 12px !important;
+  }
+
+  header.navbar .navbar__logo-icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  header.navbar .navbar__hamburger {
+    width: 36px !important;
+    height: 36px !important;
+    padding: 8px !important;
+  }
+
+  header.navbar .navbar__hamburger span {
+    margin: 5px 0 !important;
+  }
+}
+/* 1) Mobile breakpoint */
+@media (max-width: 900px) {
+  .navbar__nav {
+    display: none;
+  }
+
+  /* hide desktop links */
+  .navbar__resume-btn {
+    display: none;
+  }
+
+  /* hide desktop resume */
+  .navbar__hamburger {
+    display: inline-flex;
+  }
+
+  /* show hamburger */
+
+  .navbar__mobile-menu {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height .25s ease, opacity .2s ease;
+  }
+
+  .navbar__mobile-menu.is-open {
+    max-height: 420px;
+    /* enough for links */
+    opacity: 1;
+  }
+}
+
+/* 2) Desktop default (ensure mobile menu doesn't appear) */
+@media (min-width: 901px) {
+  .navbar__mobile-menu {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: none;
+  }
+}
+
+
 /* =========================================
    HERO SECTION
 ========================================= */
