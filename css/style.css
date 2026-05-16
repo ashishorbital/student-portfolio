@@ -219,6 +219,7 @@ ul { list-style: none; }
   width: fit-content;
 }
 
+
 /* Hide entire navbar on small screens */
 @media (max-width: 900px) {
   .navbar {
@@ -226,14 +227,8 @@ ul { list-style: none; }
   }
 }
 
-/* Minimal fix: prevent sticky header from covering content on mobile */
-@media (max-width: 900px) {
-  #main-content {
-    padding-top: 70px;
-  }
 
-  /* adjust to your navbar height */
-}
+
 
 /* Minimal + force override on mobile */
 @media (max-width: 900px) {
@@ -308,7 +303,7 @@ ul { list-style: none; }
    HERO SECTION
 ========================================= */
 .hero {
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: var(--sp-4xl);
   background: var(--color-bg);
 }
@@ -853,7 +848,7 @@ ul { list-style: none; }
 
   /* Hero */
   .hero {
-    padding-top: 100px;
+    padding-top: 32px;
     padding-bottom: var(--sp-2xl);
   }
 
