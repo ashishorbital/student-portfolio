@@ -10,6 +10,26 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
+
+<script>
+  const btn = document.querySelector(".navbar__hamburger");
+  const menu = document.getElementById("mobile-menu");
+
+  btn.addEventListener("click", () => {
+    const open = menu.classList.toggle("is-open");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+
+  menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+    menu.classList.remove("is-open");
+    btn.setAttribute("aria-expanded", "false");
+  }));
+</script>
+
+
+
+
+
 <body>
 
   <!-- ==================== NAVBAR ==================== -->
@@ -96,23 +116,25 @@
             <!-- Social icons -->
           <div class="hero__socials" aria-label="Social media links">
           
-            <!-- LinkedIn -->
-            <a href="#" class="hero__social-link" aria-label="LinkedIn">
-              <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="1.5" y="1.5" width="15" height="15" rx="2.5" stroke="currentColor" stroke-width="1.5" />
-                <path d="M5.5 8v5.5M5.5 5.5v.5M9 13.5V10a2 2 0 014 0v3.5M9 8v5.5" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" />
-              </svg>
-            </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/ashishpsadan/" target="_blank" rel="noopener noreferrer"
+            class="hero__social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="1.5" y="1.5" width="15" height="15" rx="2.5" stroke="currentColor" stroke-width="1.5" />
+              <path d="M5.5 8v5.5M5.5 5.5v.5M9 13.5V10a2 2 0 014 0v3.5M9 8v5.5" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" />
+            </svg>
+          </a>
           
-            <!-- Instagram -->
-            <a href="#" class="hero__social-link" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8" />
-                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" />
-                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
-              </svg>
-            </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/ashi.wsh/" target="_blank" rel="noopener noreferrer"
+            class="hero__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" />
+            </svg>
+          </a>
           
             <!-- Twitter / X -->
             <a href="#" class="hero__social-link" aria-label="Twitter / X">
@@ -324,12 +346,12 @@
           </div>
 
           <!-- Contact form -->
-          <form class="contact__form" action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
-            <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <form id="contactForm" class="contact__form" action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
+            <input type="hidden" name="access_key" value="4c2a2b46-a0d1-4ca4-a559-edf7762f0b94" />
             <input type="hidden" name="subject" value="New message from portfolio site" />
             <input type="hidden" name="from_name" value="Portfolio Contact Form" />
             <!-- optional: redirect after submit -->
-            <!-- <input type="hidden" name="redirect" value="https://YOUR_USERNAME.github.io/YOUR_REPO/thanks.html" /> -->
+            <!-- <input type="hidden" name="redirect" value="https://github.com/ashishorbital/student-portfolio" /> -->
           
             <div class="form-group">
               <label for="name">Full Name</label>
@@ -345,8 +367,11 @@
               <label for="message">Message</label>
               <textarea id="message" name="message" placeholder="Write your message here…" required></textarea>
             </div>
-          
+            <!-- Add this hidden field INSIDE your form (anywhere before the button) -->
+            <input type="hidden" name="redirect" value="false" />
             <button type="submit" class="btn-submit">Send Message</button>
+            <!-- Add below the button -->
+            <p id="form-status" style="margin-top:12px;"></p>
           </form>
         </div>
       </div>
@@ -373,16 +398,18 @@
         <div class="hero__socials" aria-label="Social media links">
         
           <!-- LinkedIn -->
-          <a href="#" class="hero__social-link" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/ashishpsadan/" target="_blank" rel="noopener noreferrer"
+            class="hero__social-link" aria-label="LinkedIn">
             <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="1.5" y="1.5" width="15" height="15" rx="2.5" stroke="currentColor" stroke-width="1.5" />
               <path d="M5.5 8v5.5M5.5 5.5v.5M9 13.5V10a2 2 0 014 0v3.5M9 8v5.5" stroke="currentColor" stroke-width="1.5"
                 stroke-linecap="round" />
             </svg>
           </a>
-        
+          
           <!-- Instagram -->
-          <a href="#" class="hero__social-link" aria-label="Instagram">
+          <a href="https://www.instagram.com/ashi.wsh/" target="_blank" rel="noopener noreferrer"
+            class="hero__social-link" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8" />
               <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" />
@@ -402,7 +429,37 @@
       </div>
     </div>
   </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm");
+    const statusMsg = document.getElementById("form-status");
 
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      statusMsg.textContent = "Sending...";
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: {
+            Accept: "application/json"
+          }
+        });
+
+        if (response.ok) {
+          statusMsg.textContent = "Message sent successfully.";
+          form.reset();
+        } else {
+          statusMsg.textContent = "Failed to send message.";
+        }
+      } catch (error) {
+        statusMsg.textContent = "Something went wrong.";
+      }
+    });
+  });
+</script>
   <script src="js/main.js"></script>
 </body>
 </html>
