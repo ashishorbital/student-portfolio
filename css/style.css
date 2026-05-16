@@ -218,21 +218,7 @@ ul { list-style: none; }
 .navbar__mobile-menu .navbar__resume-btn {
   width: fit-content;
 }
-/* Reduce top gap on small screens */
-@media (max-width: 900px) {
-  .hero {
-    padding-top: 20px !important;
-  }
 
-  .hero__inner {
-    padding-top: 0 !important;
-    gap: 20px !important;
-  }
-
-  .hero__image-wrap {
-    margin-top: 0 !important;
-  }
-}
 /* Hide entire navbar on small screens */
 @media (max-width: 900px) {
   .navbar {
